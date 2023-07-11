@@ -1,6 +1,6 @@
 import os
-from dotenv import load_dotenv
-from pathlib import Path
+# from dotenv import load_dotenv
+# from pathlib import Path
 from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
@@ -10,8 +10,8 @@ from linebot.models import (
 )
 from model.ifoodie import IFoodie
 
-env_path = Path('~/automation/config/line/.env').expanduser()
-load_dotenv(env_path)
+# env_path = Path('~/automation/config/line/.env').expanduser()
+# load_dotenv(env_path)
 
 acc_code = os.environ['CYBER_SVC_TOKEN']
 secr = os.environ['CYBER_SVC_SECRET']
